@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-section h4 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    cursor: default;
+}
+
+.nav-section .icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-section .icons i {
+    color: white;
+}
+
+.story-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.story {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 1.5rem;
+    width: 56rem;
+    padding-bottom: 1rem;
+}
+
+.story img {
+    height: 12rem;
+    border-radius: .5rem;
+}
+
+.status-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.status-section-main i {
+    color: rgb(221, 221, 221);
+    background-color: black;
+    border-radius: 5rem;
+    padding: .9rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.status-section-main span {
+    color: white;
+    cursor: pointer;
+}
+
+.status-section input {
+    background-color: rgb(82, 82, 82);
+    border: none;
+    padding: .8rem;
+    padding-right: 11rem;
+    border-radius: 2rem;
+}
+
+.status-section input::placeholder {
+    color: rgb(221, 221, 221);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.status-section-main {
+    background-color: rgb(37, 37, 37);
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+}
+
+.post-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.post-section .post {
+    margin-top: 1.5rem;
+    display: inline-block;
+    width: 31.5rem;
+    height: 30rem;
+    border-radius: .7rem;
+    background-color: rgb(37, 37, 37);
+}
+
+.post-section .post .post-inner {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: .7rem;
+}
+
+.post-section .post p {
+    color: white;
+}
+
+.post-section .post>p {
+    color: white;
+    padding-left: 1.5rem;
+}
+
+.post-section .post .post-inner i {
+    color: white;
+    background-color: black;
+    padding: .5rem;
+    border-radius: 5rem;
+}
+
+.post-section img {
+    width: 31.5rem;
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+.fa-thumbs-up {
+    color: white;
+}
+
+.fa-comment {
+    color: white;
+}
+
+.fa-share {
+    color: white;
+}
+
+.react-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.react-section div {
+    cursor: pointer;
+    display: flex;
+    gap: .5rem;
+}
+
+@media screen and (max-width: 920px) {
+    .story{
+        margin: 0 5.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story {
+        margin: 0 4rem;
+    }
+
+    .status-section-main {
+        width: 25rem;
+    }
+
+    .status-section-main input {
+        padding-right: 4rem;
+    }
+
+    .post-section .post {
+        width: 22.5rem;
+    }
+
+    .post-section img {
+        width: 22.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-section .icons {
+        gap: 1rem;
+    }
+
+    .story {
+        margin: 0 2.5rem;
+    }
+
+    .status-section-main {
+        width: 18rem;
+    }
+
+    .status-section-main i {
+        position: absolute;
+        left: 2.8rem;
+    }
+
+    .status-section-main input {
+        padding-right: 0;
+        width: 11rem;
+        margin-left: 3rem;
+    }
+
+    .post-section .post {
+        width: 18rem;
+    }
+
+    .post-section img {
+        width: 18rem;
+    }
+
+    .react-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+    }
+}

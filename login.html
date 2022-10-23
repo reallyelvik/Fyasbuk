@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyasbuk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: rgb(85, 255, 85);
+            border: .2rem solid black;
+            border-radius: 1.5rem;
+            padding: 0 1rem;
+            padding-top: 3rem;
+        }
+
+        .mainbox {
+            padding-top: 3.5rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-family: sans-serif;
+        }
+
+        label {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input{
+            padding: .1rem 0;
+            border-radius: .3rem;
+        }
+
+        .password {
+            margin-top: 4rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: .2rem 1rem;
+            color: white;
+            border: none;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(48, 48, 48);
+        }
+
+        button:active {
+            background-color: rgb(58, 58, 58);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2 style="text-align: center;">Fyasbuk</h2>
+        <div class="mainbox">
+            <div class="email">
+                <label for="name">&#160;&#160;&#160;&#160;&#160;&#160;Email:</label>
+                <input type="text" id="email">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="passwd">
+            </div>
+            <button type="submit" onclick="myfunc()">Log In</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        const email = document.getElementById('email')
+        const passwd = document.getElementById('passwd')
+
+
+        function myfunc() {
+            if (email.value === 'admin' && passwd.value === 'admin') {
+                window.open('main/main.html', '_self')
+            } else {
+                alert('Incorrect Email or Password.');
+            }
+        }
+    </script>
+</body>
+
+</html>
